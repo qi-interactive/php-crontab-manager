@@ -1,7 +1,7 @@
 <?php
-namespace tests\php\manager\crontab;
+namespace tests\qi\crontab;
 
-use tests\php\manager\crontab\mock\MockCrontabManager;
+use tests\qi\crontab\mock\MockCrontabManager;
 
 require_once __DIR__ . '/mock/MockCrontabManager.php';
 require_once dirname(__DIR__) . '/src/CronEntry.php';
@@ -13,7 +13,7 @@ require_once dirname(__DIR__) . '/src/CronEntry.php';
 class CrontabManagerTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \tests\php\manager\crontab\mock\MockCrontabManager
+     * @var \tests\qi\crontab\mock\MockCrontabManager
      */
     protected $object;
 
@@ -40,7 +40,7 @@ class CrontabManagerTest extends \PHPUnit_Framework_TestCase
     public function testNewJob()
     {
         $job = $this->object->newJob();
-        $this->assertInstanceOf('php\manager\crontab\CronEntry', $job);
+        $this->assertInstanceOf('qi\crontab\CronEntry', $job);
         $actual = $job->render();
         $expected = '';
         $this->assertEquals($expected, $actual);

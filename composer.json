@@ -1,0 +1,11 @@
+{
+    "name": "qi/cron",
+    "description": "Manages linux crontab file by adding and deleting the appropriate entries. It is able to track the source file so that after the changes to this file, he will be able to enter and update the user's crontab file in safe way (doesn't remove entries added by user using crontab -e).",
+    "keywords": ["cron"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "qi\\cron\\": ""
+        }
+    },
+}

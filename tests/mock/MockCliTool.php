@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\php\manager\crontab\mock;
+namespace tests\qi\crontab\mock;
 
-use php\manager\crontab\CliTool;
+use qi\crontab\CliTool;
 
 
 require_once dirname(dirname(__DIR__)) . '/src/CliTool.php';

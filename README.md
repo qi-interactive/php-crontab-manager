@@ -33,7 +33,7 @@ Here is a simple example of use. Adding a simple task to crontab:
 
 ```php
 <?php
-use php\manager\crontab\CrontabManager;
+use qi\crontab\CrontabManager;
 
 $crontab = new CrontabManager();
 $job = $crontab->newJob();
@@ -51,7 +51,7 @@ in the cron:
 
 ```php
 <?php
-use php\manager\crontab\CrontabManager;
+use qi\crontab\CrontabManager;
 
 $crontab = new CrontabManager();
 $crontab->enableOrUpdate('/tmp/my/crontab.txt');

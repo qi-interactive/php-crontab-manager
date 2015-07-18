@@ -1,7 +1,7 @@
 <?php
-namespace tests\php\manager\crontab;
+namespace tests\qi\crontab;
 
-use tests\php\manager\crontab\mock\MockCliTool;
+use tests\qi\crontab\mock\MockCliTool;
 
 require_once __DIR__ . '/mock/MockCliTool.php';
 
@@ -46,7 +46,7 @@ class CliToolTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers php\manager\crontab\CliTool::run
+     * @covers qi\crontab\CliTool::run
      */
     public function testRun1()
     {
@@ -63,7 +63,7 @@ class CliToolTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers php\manager\crontab\CliTool::enable
+     * @covers qi\crontab\CliTool::enable
      */
     public function testEnable()
     {
@@ -79,7 +79,7 @@ class CliToolTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers php\manager\crontab\CliTool::disable
+     * @covers qi\crontab\CliTool::disable
      */
     public function testDisable()
     {
@@ -99,7 +99,7 @@ class CliToolTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers php\manager\crontab\CliTool::usage
+     * @covers qi\crontab\CliTool::usage
      */
     public function testUsage()
     {

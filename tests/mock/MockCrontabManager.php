@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\php\manager\crontab\mock;
+namespace tests\qi\crontab\mock;
 
-use php\manager\crontab\CrontabManager;
+use qi\crontab\CrontabManager;
 
 
 require_once dirname(dirname(__DIR__)) . '/src/CrontabManager.php';

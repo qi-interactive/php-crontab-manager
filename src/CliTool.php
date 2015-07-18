@@ -26,7 +26,7 @@
  *
  */
 
-namespace php\manager\crontab;
+namespace qi\crontab;
 
 /**
  *
@@ -304,10 +304,10 @@ class CliTool
      */
     private function _loadClasses()
     {
-        if (!class_exists('php\manager\crontab\CrontabManager')) {
+        if (!class_exists('qi\crontab\CrontabManager')) {
             require_once __DIR__ . '/CrontabManager.php';
         }
-        if (!class_exists('php\manager\crontab\CronEntry')) {
+        if (!class_exists('qi\crontab\CronEntry')) {
             require_once __DIR__ . '/CronEntry.php';
         }
     }
